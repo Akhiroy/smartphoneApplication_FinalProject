@@ -1,4 +1,4 @@
-package com.example.musicplayerapp;
+package com.example.musicplayer;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;

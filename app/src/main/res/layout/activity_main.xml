@@ -4,22 +4,36 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="182dp"
+        android:layout_marginHorizontal="15dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/sample_song" />
+
     <TextView
         android:id="@+id/songTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Song Title"
+        android:text="Nature vibe"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"/>
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="200dp"
+    android:layout_marginLeft="50dp">
     <Button
         android:id="@+id/btnPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play"
+        android:layout_alignParentBottom="@id/btnPlay"
         android:layout_below="@id/songTitle"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/btnPause"
@@ -27,16 +41,16 @@
         android:layout_height="wrap_content"
         android:text="Pause"
         android:layout_below="@id/btnPlay"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/btnStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop"
+        android:text="Next"
         android:layout_below="@id/btnPause"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
-
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
+</LinearLayout>
 </RelativeLayout>
